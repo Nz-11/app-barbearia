@@ -9,7 +9,7 @@ export const siteConfig = {
   tagline: "PRECISION. CHARACTER. STYLE.",
   description:
     "Uma barbearia contemporânea que combina cortes de precisão, atendimento personalizado e uma experiência sofisticada.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
 
   // --- Dados demonstrativos (site fictício) — não são contatos reais ---
   contact: {

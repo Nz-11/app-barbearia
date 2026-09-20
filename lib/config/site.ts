@@ -4,20 +4,20 @@
  * Nenhum dado aqui é sensível — pode ficar no repositório.
  */
 export const siteConfig = {
-  name: "Barbearia Nobre",
-  shortName: "Nobre",
-  tagline: "PRECISION. STYLE. EXPERIENCE.",
+  name: "BLACKLINE BARBER CLUB",
+  shortName: "BLACKLINE",
+  tagline: "PRECISION. CHARACTER. STYLE.",
   description:
-    "Barbearia premium especializada em cortes de precisão, barboterapia e experiência exclusiva.",
+    "Uma barbearia contemporânea que combina cortes de precisão, atendimento personalizado e uma experiência sofisticada.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 
-  // --- Placeholder: substitua pelos dados reais ---
+  // --- Dados demonstrativos (site fictício) — não são contatos reais ---
   contact: {
-    phone: "(11) 0000-0000",
-    whatsapp: "5511000000000",
-    email: "contato@barbearianobre.example",
-    instagram: "@barbearianobre",
-    instagramUrl: "https://instagram.com/barbearianobre",
+    phone: "(11) 4000-2026",
+    whatsapp: "551140002026",
+    email: "contato@blackline-demo.example",
+    instagram: "@blackline.barber.demo",
+    instagramUrl: "https://instagram.com/blackline.barber.demo",
   },
   address: {
     street: "Rua Exemplo, 123",
@@ -25,7 +25,7 @@ export const siteConfig = {
     city: "São Paulo",
     state: "SP",
     zip: "00000-000",
-    mapsUrl: "https://maps.google.com/?q=Barbearia+Nobre",
+    mapsUrl: "https://maps.google.com/?q=Blackline+Barber+Club",
   },
   hours: [
     { day: "Segunda a Sexta", time: "09:00 – 20:00" },

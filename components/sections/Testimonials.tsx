@@ -9,6 +9,9 @@ export function Testimonials() {
     <section className="bg-ink-950 px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeading eyebrow="QUEM JÁ PASSOU POR AQUI" title="Avaliações" />
+        <p className="mt-2 text-xs uppercase tracking-widest2 text-bone-200/40">
+          Depoimentos demonstrativos — conteúdo fictício para fins de apresentação
+        </p>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t, i) => (

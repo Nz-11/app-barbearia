@@ -4,17 +4,17 @@
 -- =============================================================================
 
 insert into public.services (name, description, duration_minutes, price_cents, active) values
-  ('Corte Masculino', 'Corte moderno com acabamento na navalha.', 45, 4000, true),
-  ('Barba', 'Modelagem e hidratação completa da barba.', 30, 3000, true),
-  ('Corte + Barba', 'Combo completo de corte e barba.', 60, 6500, true),
-  ('Platinado', 'Descoloração e tonalização completa.', 120, 15000, true)
+  ('Corte Signature', 'Corte moderno com acabamento na navalha.', 45, 5500, true),
+  ('Barba Premium', 'Modelagem e hidratação completa da barba.', 30, 4000, true),
+  ('Corte + Barba', 'Combo completo de corte e barba.', 75, 8500, true),
+  ('Platinum Transformation', 'Descoloração e tonalização completa.', 120, 18000, true)
 on conflict do nothing;
 
 -- Barbeiros de demonstração (sem profile_id — vincule depois de criar o
 -- usuário Auth correspondente pelo painel admin).
 insert into public.barbers (name, bio, specialties, active) values
-  ('Carlos Mendes', 'Barbeiro clássico, especialista em navalha.', array['Corte clássico', 'Barba'], true),
-  ('Rafael Souza', 'Especialista em cortes modernos e degradê.', array['Degradê', 'Platinado'], true)
+  ('Enzo Martins', 'Barbeiro clássico, especialista em corte e acabamento.', array['Corte clássico', 'Acabamento'], true),
+  ('Arthur Costa', 'Especialista em degradê, cortes modernos e platinado.', array['Degradê', 'Cortes modernos', 'Platinado'], true)
 on conflict do nothing;
 
 -- Expediente padrão (seg-sex 09:00-18:00, intervalo 12:00-13:00; sáb 09:00-15:00)
